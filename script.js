@@ -26,8 +26,9 @@ app.get("/user/:id", function (req, res) {
     console.log(username)
     res.json(username)
 })
-app.get('/language/:id', function (req, res) {
+app.get('/language/:id1/:id2', function (req, res) {
     let lang = req.params.id;
+    let met = req.params.id;
   var val = {
     "id": 21797,
     "username": "vivekanandanrk",
@@ -50,7 +51,8 @@ app.get('/language/:id', function (req, res) {
     "defaultchartrange": 2,
     "attachedsignature": 0,
     "signature": "",
-    "avator": null
+    "avator": null,
+    "metric":met
   }
   res.send(val)
 })
