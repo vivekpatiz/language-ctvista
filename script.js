@@ -27,8 +27,8 @@ app.get("/user/:id", function (req, res) {
     res.json(username)
 })
 app.get('/language/:id1/:id2', function (req, res) {
-    let lang = req.params.id;
-    let met = req.params.id;
+    let lang = req.params.id1;
+    let met = req.params.id2;
   var val = {
     "id": 21797,
     "username": "vivekanandanrk",
