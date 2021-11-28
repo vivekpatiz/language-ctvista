@@ -26,7 +26,8 @@ app.get("/user/:id", function (req, res) {
     console.log(username)
     res.json(username)
 })
-app.get('/language/:id', function (req, res) {
+app.get('/language/:id/:id', function (req, res) {
+    console.log(req,"req");
   var val = {
     "id": 21797,
     "username": "vivekanandanrk",
