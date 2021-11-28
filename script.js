@@ -26,8 +26,8 @@ app.get("/user/:id", function (req, res) {
     console.log(username)
     res.json(username)
 })
-app.get('/language/:id/:id', function (req, res) {
-    console.log(req,"req");
+app.get('/language/:id', function (req, res) {
+    let lang = req.params.id;
   var val = {
     "id": 21797,
     "username": "vivekanandanrk",
@@ -46,7 +46,7 @@ app.get('/language/:id/:id', function (req, res) {
     "status": 0,
     "dateformat": "MM-DD-YYYY",
     "timeformat": "24",
-    "language": "en",
+    "language": lang,
     "defaultchartrange": 2,
     "attachedsignature": 0,
     "signature": "",
